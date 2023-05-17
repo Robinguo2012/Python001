@@ -71,3 +71,4 @@ class Employee:
 # a = Employer()
 # a.f()
 
+# python -m dis test.py 查看字节码
