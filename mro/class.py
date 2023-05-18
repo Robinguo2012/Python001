@@ -1,4 +1,3 @@
-
 # class Complex:
 #     def __init__(self, realpart, imagpart):
 #         self.r = realpart
@@ -72,3 +71,18 @@ class Employee:
 # a.f()
 
 # python -m dis test.py 查看字节码
+
+print('------------------')
+class A:
+
+    def classFunc(self):
+        print('classFunc')
+
+    def objFunc(self):
+        print('objFunc')
+
+o = A()
+
+print(A.objFunc)
+print(o.objFunc)
+
