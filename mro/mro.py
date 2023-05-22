@@ -18,7 +18,6 @@ print(C.mro())
 c = C()
 c.say()
 
-
 # [<class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>]
 # 线性化serialization
 # 遵循三条原则：

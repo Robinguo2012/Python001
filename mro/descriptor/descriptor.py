@@ -79,7 +79,7 @@ class Validator(ABC):
     def __set_name__(self, owner, name):
         self.private_name = '_' + name
     
-    def __get__(self, instance, owner):
+    def __get__(self, instance, objtype=None):
         return getattr(instance, self.private_name)
     
     def __set__(self, instance, value):
@@ -248,6 +248,6 @@ print(o.objFunc)
 通过类实例化一个instance 时，通过instance.method()调用时，通过mro 查找方法时会找到类的function object。
 他是一个function object descriptor 有一个func_descr_get，返回一个method object。
 他是一个结构体对象，保存了function object 和 instance 的引用。
-这个过程就是绑定一个方法的过程。
+这个就是绑定一个方法的过程。
 '''
 

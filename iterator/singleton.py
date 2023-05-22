@@ -99,3 +99,5 @@ print("使用metaclass 创建单例：", id(o1) == id(o2))
 
 
 
+
+
